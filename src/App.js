@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import Counter from "./my_components/Counter";
+import Team from "./my_components/Team";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Counter />
+      <div id="game">
+        <Team teamName="Eric's Awesome Sports Team" />
+        <Team teamName="Chanda's Awesome Sports Team" />
+      </div>
     </div>
   );
 }
